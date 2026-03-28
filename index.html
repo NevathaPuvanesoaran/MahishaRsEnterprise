@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mahisha RS Enterprise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER / LOGO -->
+<header class="header">
+  <img src="image.logo.jpg" alt="Mahisha RS Enterprise" class="logo-img">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- INTRO -->
+<section class="section">
+  <h2>Welcome to Mahisha RS Enterprise</h2>
+  <p>
+    Mahisha RS Enterprise is a reliable and professional waste collection and recycling service provider,
+    committed to delivering efficient and environmentally responsible solutions. We serve residential,
+    commercial, and industrial clients with dedication and consistency.
+  </p>
+  <p>
+    Our mission is to maintain cleanliness and sustainability by ensuring proper waste handling, timely
+    collection, and eco-friendly recycling practices.
+  </p>
+</section>
+
+<!-- FLEET -->
+<section class="section">
+  <h2>Our Fleet 🚛</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="images.roro.jpg" onclick="openPopup(this)">
+      <a href="https://wa.me/60175046043" class="btn">Book Now</a>
+    </div>
+    <div class="card">
+      <img src="images.recycle.jpg" onclick="openPopup(this)">
+      <a href="https://wa.me/60175046043" class="btn">Book Now</a>
+    </div>
+    <div class="card">
+      <img src="images.box.jpg" onclick="openPopup(this)">
+      <a href="https://wa.me/60175046043" class="btn">Book Now</a>
+    </div>
+    <div class="card">
+      <img src="images.tipper.jpg" onclick="openPopup(this)">
+      <a href="https://wa.me/60175046043" class="btn">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- POPUP -->
+<div id="popup" onclick="closePopup()">
+  <img id="popup-img">
+</div>
+
+<footer>
+  <p>© 2026 MAHISHA RS ENTERPRISE</p>
+</footer>
+
+<script>
+function openPopup(img) {
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup-img").src = img.src;
+}
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
